@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BILL SPLIT</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="heading">BILL SPLIT</div>
+      <div class="bill-container">
+        <div class="left-box">
+          <div class="bill-amount">
+            <div class="bill-label">Bill</div>
+            <div class="bill-amount-input">
+              <span class="dollar-sign">$</span>
+              <input
+                type="number"
+                pattern="\d*"
+                id="bill-amount"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="tip-percentage-selector">
+            <div class="bill-label">Select Tip %</div>
+            <div class="tip-btn-container">
+              <button class="tip-btn">5%</button>
+              <button class="tip-btn">10%</button>
+              <button class="tip-btn">15%</button>
+              <button class="tip-btn">20%</button>
+              <button class="tip-btn">25%</button>
+              <button class="tip-btn">30%</button>
+            </div>
+          </div>
+          <div class="no-of-people-selctor">
+            <div class="bill-label">Number of People</div>
+            <div class="no-of-people-input-container">
+              <div class="no-of-people"></div>
+              <button class="increment-btn">+</button>
+              <div class="no-of-people-input">0</div>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <button class="generate-btn">Generate Bill</button>
+        </div>
+        <div class="right-box">
+          <div class="tip-amount-container">
+            <div>
+              <div class="title">Tip Amount</div>
+              <div class="sub-title">/person</div>
+            </div>
+            <div class="tip-amount amount">$0.00</div>
+          </div>
+          <div class="total-container">
+            <div>
+              <div class="title">Total</div>
+              <div class="sub-title">/person</div>
+            </div>
+            <div class="total amount">$0.00</div>
+          </div>
+          <button class="reset-btn">RESET</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

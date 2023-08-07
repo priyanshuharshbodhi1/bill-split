@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #d6bcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.heading {
+  text-align: center;
+  color: #6f3cff;
+  font-family: "DM Sans ", sans-serif;
+  font-size: 1.3125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.82031rem;
+}
+
+.bill-container {
+  display: flex;
+
+  border-radius: 0.5625rem;
+  background: #fbfafb;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.43);
+  padding: 2rem;
+  gap: 1.3rem;
+}
+
+.left-box {
+  width: 18rem;
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-box {
+  background: #9c60ff;
+  border-radius: 9px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 18rem;
+  flex-shrink: 0;
+}
+
+.bill-label {
+  color: #9c60ff;
+  font-family: Inconsolata;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.04219rem;
+  margin-bottom: 0.3rem;
+}
+
+.no-of-people-input-container {
+  display: flex;
+  border-radius: 0.1875rem;
+  background: rgba(182, 172, 195, 0.53);
+  justify-content: flex-end;
+}
+
+.generate-btn {
+  border-radius: 4px;
+  font-family: "DM Sans", sans-serif;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 5px;
+  background: #fbfafb;
+  box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.43);
+  color: #8f8f8f;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 550;
+  line-height: normal;
+  letter-spacing: 0.02375rem;
+  cursor: pointer;
+}
+
+.tip-amount-container,
+.total-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inconsolata", sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  color: #f3e4ff;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.045rem;
+  margin-top: 5px;
+}
+
+.sub-title {
+  color: #c39fff;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.03656rem;
+}
+
+.amount {
+  color: #c39fff;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.025rem;
+}
+
+.reset-btn {
+  border-radius: 4px;
+  background: #c39fff;
+  color: #9c60ff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.17813rem;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: auto;
+}
+
+.tip-btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-right: 2rem;
+}
+
+.tip-btn {
+  padding: 8px;
+  background-color: #9c60ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 750px) {
+    .bill-container {
+      flex-wrap: wrap;
+    }
+  }
