@@ -72,6 +72,50 @@ body {
   margin-bottom: 0.3rem;
 }
 
+.bill-amount-input {
+  position: relative;
+  display: flex;
+}
+
+.bill-amount-input > input {
+  flex: 1;
+  padding: 9px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(182, 172, 196, 0.53);
+  text-align: right;
+  cursor: pointer;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+  color: #9c60ff;
+  font-size: 18px;
+  letter-spacing: 0.1rem;
+}
+
+input[type="number"] {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  position: relative;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  content: "";
+  display: none;
+}
+
+.bill-amount-input > input:focus {
+  outline: none;
+}
+
+.bill-amount-input > img {
+  position: absolute;
+  top: 12.5px;
+  left: 15px;
+}
+
 .no-of-people-input-container {
   display: flex;
   border-radius: 0.1875rem;
@@ -157,8 +201,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   max-width: 300px;
-  margin: 0 auto;
-  margin-right: 2rem;
+  /* margin: 0 auto; */
 }
 
 .tip-btn {
@@ -170,10 +213,8 @@ body {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 750px) {
-    .bill-container {
-      flex-wrap: wrap;
-    }
+  .bill-container {
+    flex-wrap: wrap;
   }
+}
