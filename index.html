@@ -15,7 +15,7 @@
           <div class="bill-amount">
             <div class="bill-label">Bill</div>
             <div class="bill-amount-input">
-              <input type="number" placeholder="0.00" id="input" />
+              <input type="number" placeholder="0.00" id="input" max="10000" />
               <img src="./images/icon-rupees.svg" alt="dollar-icon" />
             </div>
           </div>
@@ -33,11 +33,11 @@
           <div class="no-of-people-selctor">
             <div class="bill-label">Number of People</div>
             <div class="no-of-people-input-container">
-              <input type="number" placeholder="1" id="people" />
+              <input type="number" placeholder="1" id="people" value="1"/>
               <img src="./images/icon-person.svg" alt="person" />
             </div>
           </div>
-          <button class="generate-btn">Generate Bill</button>
+          <button class="generate-btn" id="generate-btn" disabled onclick="consol()">Generate Bill</button>
         </div>
         <div class="right-box">
           <div class="tip-amount-container">

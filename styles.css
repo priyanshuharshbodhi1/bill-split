@@ -132,13 +132,13 @@ input::placeholder {
   background-color: #9c60ff;
   color: #ffffff;
   border: 2px solid #ffffff;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   box-sizing: border-box;
 }
 
 .tip-btn.selected {
-  border: 2px solid #6104f8;
+  border: 2px solid #4401ae;
 }
 
 .no-of-people-input-container {
@@ -148,27 +148,28 @@ input::placeholder {
 
 .no-of-people-input-container > input {
   flex: 1;
-  padding : 9px;
+  padding: 9px;
   font-size: 16px;
-  border : none;
+  border: none;
   border-radius: 5px;
-  background: rgba(182, 172, 196, 0.53);    text-align: right;
+  background: rgba(182, 172, 196, 0.53);
+  text-align: right;
   cursor: pointer;
-  font-family: 'Space Mono',sans-serif;
+  font-family: "Space Mono", sans-serif;
   font-weight: 700;
   color: #9c60ff;
   font-size: 18px;
   letter-spacing: 0.1rem;
 }
 
-.no-of-people-input-container > input:focus{
- outline: none;
+.no-of-people-input-container > input:focus {
+  outline: none;
 }
 
 .no-of-people-input-container > img {
   position: absolute;
-  top : 11px;
-  left : 15px;
+  top: 11px;
+  left: 15px;
 }
 
 .generate-btn {
@@ -178,9 +179,9 @@ input::placeholder {
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 5px;
-  background: #fbfafb;
+  background: #9c60ff;
   box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.43);
-  color: #8f8f8f;
+  color: #fff;
   text-align: center;
   font-size: 1rem;
   font-style: normal;
@@ -188,6 +189,12 @@ input::placeholder {
   line-height: normal;
   letter-spacing: 0.02375rem;
   cursor: pointer;
+}
+
+.generate-btn:disabled {
+  background-color: #fff;
+  color: #a3a3a3;
+  cursor: not-allowed;
 }
 
 .tip-amount-container,
@@ -201,7 +208,7 @@ input::placeholder {
 .title {
   color: #f3e4ff;
   font-family: "Inconsolata", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -212,11 +219,12 @@ input::placeholder {
 .sub-title {
   color: #c39fff;
   font-family: "Inconsolata", sans-serif;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.03656rem;
+  margin-top: 3px;
 }
 
 .amount {
@@ -227,11 +235,12 @@ input::placeholder {
   font-weight: 600;
   line-height: normal;
   letter-spacing: 0.025rem;
+  overflow: hidden;
 }
 
 .reset-btn {
   border-radius: 4px;
-  background: #c39fff;
+  background-color: #fff;
   color: #9c60ff;
   font-family: "DM Sans", sans-serif;
   font-size: 0.9375rem;
@@ -242,10 +251,25 @@ input::placeholder {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: auto;
+  cursor: pointer;
+}
+
+.reset-btn:disabled {
+  cursor: not-allowed;
+  background: #ccadfe;
 }
 
 @media (max-width: 750px) {
+  .container {
+    gap: 1.5rem;
+  }
+  .heading {
+    margin-top: 1rem;
+  }
   .bill-container {
+    flex-direction: column;
     flex-wrap: wrap;
+    padding: 1rem;
+    gap: 3rem;
   }
 }
