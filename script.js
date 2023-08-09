@@ -14,6 +14,8 @@ const resetBtn = document.querySelector(".reset-btn");
 //     }
 //   });
 
+resetBtn.setAttribute("disabled", "true");
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     const isSelected = button.classList.contains("selected");
