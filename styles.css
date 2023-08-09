@@ -120,6 +120,26 @@ input::placeholder {
   left: 15px;
 }
 
+.tip-btn-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 300px;
+}
+
+.tip-btn {
+  padding: 8px;
+  background-color: #9c60ff;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.tip-btn.selected {
+  border: 2px solid #6104f8;
+}
 
 .no-of-people-input-container {
   position: relative;
@@ -222,23 +242,6 @@ input::placeholder {
   padding-top: 8px;
   padding-bottom: 8px;
   margin-top: auto;
-}
-
-.tip-btn-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 300px;
-  /* margin: 0 auto; */
-}
-
-.tip-btn {
-  padding: 8px;
-  background-color: #9c60ff;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 @media (max-width: 750px) {
