@@ -76,7 +76,7 @@ function calculateAmounts() {
   const tipPercentage = parseFloat(selectedTipButton.textContent);
   const numberOfPeople = parseInt(peopleField.value);
 
-  const tipAmount = (billAmount * tipPercentage) / 100;
+  const tipAmount = (billAmount * tipPercentage) / 100*numberOfPeople;
   const totalAmount = (billAmount + tipAmount) / numberOfPeople;
 
   tipAmountElement.textContent = `₹${tipAmount.toFixed(2)}`;
